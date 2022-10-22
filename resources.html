@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <html>
+    <title>
+        Track Your DSA
+    </title>
+    <head>
+        <link rel ="stylesheet" href="CSS/styles.css">
+    </head>
+    <body>
+        <div id = 'container'>
+        <header>
+            <img src="images\logo.jpg" alt="logo">
+            
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>  
+                <li><a href="Practice.html">Practice</a></li> 
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href ="Contact_us.html"> Contact</a>  </li>
+            </ul>
+        </nav>
+    
+        
+        
+        
+        <main >
+            <div class ='resource-page_flex'> 
+            <div class = 'resouces_sidebar' >
+                <button class="accordion">Array</button>
+                <div class="panel">
+                    topics
+                </div>
+                <button class="accordion">Matrix</button>
+                <div class="panel">
+                </div>
+                <button class="accordion">Hash Maps</button>
+                <div class="panel">
+                </div>
+                <button class="accordion">Linked List</button>
+                <div class="panel">
+                </div>
+                <button class="accordion">Matrix</button>
+                <div class="panel">
+                </div>
+            </div>
+            <div class = 'resouces_content'>
+                <iframe src="resources\CRT1.html"></iframe>
+               
+            </div>
+        </div>
+        </main>
+        
+        
+        <footer>
+            <br>
+            <p>&copy; Copyright 2022. All rights reserved.</p>
+            <p><a href="mailto:dsatracker@gmail.com">dsatracker@gmail.com</a></p>
+        </footer>
+        
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+    
+            var count = 0
+            function progress_bar(){
+                
+            }
+            </script>
+    </body>
+</html>

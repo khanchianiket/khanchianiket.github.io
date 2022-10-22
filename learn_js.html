@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Functions with Argument</title>
+    <script>
+        // Define a contructor for a child
+        var child = function(name, born){   //this is refers to the instance 
+            this.name = name;  //property = value 
+            this.born = born;
+            this.ageInYear = function(year){  //method = function
+                return year - born;
+            };
+        }
+
+        //Create a child
+
+        var dimpy = new child('Dimpy the sui buoy',1997);
+        console.log('Dimpy the sui buoy ' + dimpy.ageInYear(2022)
+        + " years old.");
+
+
+    </script>
+    
+    </head>
+</html>

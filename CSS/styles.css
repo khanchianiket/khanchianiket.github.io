@@ -1,0 +1,196 @@
+body{
+    background-color: black;
+}
+p,h2{
+  color: white;
+}
+header{
+    width:20%;
+    font-family: cursive;
+    float: left;
+    
+}
+header img{
+    height: 100px;
+    width: 100px;
+}
+
+
+nav{
+    width:75%; 
+    float: right;
+    margin: 0em 4em 0 0;
+    height: 100px;
+    /*background-image: url("http://127.0.0.1:5500/images/pexels-pixabay-270348.jpg");*/
+}
+
+main{
+    clear: right;
+    background-color: rgb(3, 41, 52);
+    background-image: url("\images\pexels-nataliya-vaitkevich-6120212.jpg");
+    padding: 2%;
+    font-size: 1.5em;
+    border-radius: 10px;
+
+}
+
+
+nav ul{
+    list-style-type: none;
+    margin:0;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 1.75em;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.5em 1em 0.5em 1em;
+    text-decoration: none;
+    
+}
+nav ul li a:hover {
+    
+    text-decoration: underline;
+
+  }
+
+footer p{
+    font-size: 1em;
+    text-align: center;
+    color:rgb(160, 27, 27);
+    padding: 0 1em;
+}
+
+
+footer p a{
+    color: rgb(133, 19, 19);
+    text-decoration:double;
+}
+#image1{
+    height: 6%;
+}
+
+.grid-container{
+display: grid;
+grid-template-columns: 50% 50% ;  /* it specify the size of each column */
+}
+
+.grid-item{
+    display: inline-block;
+}
+/* Practice Table Design */
+.panel table{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.panel table td, .panel table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.panel table tr:nth-child(even){background-color: #f2f2f2;}
+
+.panel table tr:hover {background-color: #ddd;}
+
+.panel table th {
+  
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: steelblue;
+  color: white;
+}
+.panel table a{
+  text-decoration: none;
+  color: black;
+  
+}
+
+
+.accordion {
+    background-color:rgba(0, 0, 0, 0.888);
+    color: white;
+    cursor: pointer;
+    
+    width: 100%;
+    border: 1px solid darkslategrey;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    /* border-radius: 10px; */
+
+  }
+progress{
+    width: 45%;
+    height: 2rem;
+    margin: 1vh 0vh 0vh 2vh;
+}
+.topic{
+    width: 50%;
+} 
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+    color: black;
+    font-size: large;
+  }
+  .active p, .accordion:hover p{
+    color: black;
+  }
+  .active, .accordion:hover progress{
+    margin: 1.6vh 0vh 0vh 2vh;
+  }
+  
+  .panel {
+    
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .resource-page_flex{
+    display: flex;
+    height: 100vh;
+    
+  }
+  
+  .resouces_sidebar{
+    min-width: 15%;
+    border: 2px solid;
+    
+  }
+
+  .resouces_content{
+    max-width: 70%;
+    min-width: 70%;
+    border: 2px solid;
+    
+  }
+  .resouces_content iframe{
+    min-width: -webkit-fill-available;
+    min-height:-webkit-fill-available;
+
+  } 
+
+  .progress {
+    width: 100%;
+    background-color: grey;
+    
+    
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+  }
